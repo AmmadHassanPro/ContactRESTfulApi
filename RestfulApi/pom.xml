@@ -138,6 +138,7 @@
         <groupId>com.google.appengine</groupId>
         <artifactId>appengine-maven-plugin</artifactId>
         <version>1.9.60</version>
+        
       </plugin>
       
 		</plugins>
@@ -160,9 +161,31 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
+		
+	
+        <repository>
+            <id>spring-snapshots</id>
+            <url>http://repo.spring.io/libs-snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    
 	</repositories>
 
+
+
+
 	<pluginRepositories>
+	
+	<pluginRepository>
+            <id>spring-snapshots</id>
+            <url>http://repo.spring.io/libs-snapshot</url>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </pluginRepository>
+	
 		<pluginRepository>
 			<id>spring-snapshots</id>
 			<name>Spring Snapshots</name>
