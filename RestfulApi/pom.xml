@@ -161,15 +161,7 @@
 				<enabled>false</enabled>
 			</snapshots>
 		</repository>
-		
 	
-        <repository>
-            <id>spring-snapshots</id>
-            <url>http://repo.spring.io/libs-snapshot</url>
-            <snapshots>
-                <enabled>true</enabled>
-            </snapshots>
-        </repository>
     
 	</repositories>
 
