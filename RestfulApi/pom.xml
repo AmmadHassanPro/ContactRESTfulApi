@@ -3,13 +3,13 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>Recipe</groupId>
-	<artifactId>JpaHibernateDemo</artifactId>
+	<groupId>RestfFul</groupId>
+	<artifactId>ContactRest</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
-	<name>JpaHibernateDemo</name>
-	<description>A recipe app using Hibernate</description>
+	<name>ContactRest</name>
+	<description>A Restful Microservice demonstrating CRUD Operations</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -36,7 +36,26 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+			<exclusions>
+        <exclusion>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-tomcat</artifactId>
+        </exclusion>
+      </exclusions>
 		</dependency>
+		
+		<dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>jul-to-slf4j</artifactId>
+      <scope>provided</scope>
+    </dependency>
 		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
