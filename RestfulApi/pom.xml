@@ -87,12 +87,6 @@
     <artifactId>jackson-datatype-jsr310</artifactId>
 </dependency>
 		
-		<!-- https://mvnrepository.com/artifact/com.google.appengine/appengine-api-1.0-sdk -->
-<dependency>
-    <groupId>com.google.appengine</groupId>
-    <artifactId>appengine-api-1.0-sdk</artifactId>
-    <version>1.9.63</version>
-</dependency>
 		
 	</dependencies>
 
