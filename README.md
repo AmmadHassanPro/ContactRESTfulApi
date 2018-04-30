@@ -1,6 +1,13 @@
 # ContactRESTfulApi
 Contact Rest Api Documentation
 
+Contact Rest Api Documentation
+
+The app is deployed on GCP , please use the following url:
+
+https://javarestapi-1234.appspot.com
+
+and append the method name at the end and use the provided sample request and response to make requests. Postman is suggested to test the api.All the Methods are POST, so the call should be made using POST method.
 
 Overview:
 The Contact Rest Api is a Spring Boot with Spring MVC developed api which is capable of performing CRUD operation on a Contact Entity. It is using in memory h2 database instance for persistence. It using using Hibernate as an ORM and String Data JPA as a DAO layer. I have written some JUnit tests using Mockito and Spring Mock MVC to test some endpoints. It is using JSON for request and response.
@@ -172,17 +179,3 @@ Response:
     "date": "2018-04-28T11:17:57.618"
 }
 
-
-
-
-
-
-Instruction for Running:
-
-For running locally , please download the following jar:
-
-https://drive.google.com/file/d/1I6H5V57kjzykr3rgI_HjuI4e8A2IHe3p/view?usp=sharing
-
-And double click it to start, Sping Boot will automatically start a Tomcat and an embedded H2 database .
-
-Then please use http://localhost:8080/ and append the methods listed above and use Postman to test it.
