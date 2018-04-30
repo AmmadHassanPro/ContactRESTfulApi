@@ -1,7 +1,3 @@
-# ContactRESTfulApi
-Contact Rest Api Documentation
-
-Contact Rest Api Documentation
 
 The app is deployed on GCP , please use the following url:
 
