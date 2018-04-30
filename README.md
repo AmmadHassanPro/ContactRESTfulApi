@@ -6,7 +6,7 @@ The app is deployed on GCP , please use the following url:
 
 https://javarestapi-1234.appspot.com
 
-and append the method name at the end and use the provided sample request and response to make requests. Postman is suggested to test the api.
+and append the method name at the end and use the provided sample request and response to make requests. Postman is suggested to test the api.All the Methods are POST, so the call should be made using POST method.
 
 Overview:
 
