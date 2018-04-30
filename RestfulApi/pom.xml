@@ -139,7 +139,10 @@
         <groupId>com.google.appengine</groupId>
         <artifactId>appengine-maven-plugin</artifactId>
         <version>1.9.48</version>
-        
+        <configuration>
+                <project>javarestapi-1234</project>
+                <version>1</version>
+            </configuration>
       </plugin>
       
 		</plugins>
