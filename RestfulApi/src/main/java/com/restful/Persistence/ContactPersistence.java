@@ -12,6 +12,7 @@ import com.restful.Entities.Contact;
 public interface ContactPersistence extends CrudRepository<Contact,Long>{
 	
 	Contact findByName(String name);
+	List<Contact> findAllByName(String name);
 	Contact findByEmail(String email);
 	
 	List<Contact> findByState(String State);

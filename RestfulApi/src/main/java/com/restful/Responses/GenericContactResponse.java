@@ -1,5 +1,7 @@
 package com.restful.Responses;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -11,6 +13,7 @@ public class GenericContactResponse {
 	@Autowired
 	private Contact contact;
 	private String status;
+
 	public Contact getContact() {
 		return contact;
 	}
@@ -33,6 +36,7 @@ public class GenericContactResponse {
 		this.contact = contact;
 		this.status = status;
 	}
+
 	
 	
 

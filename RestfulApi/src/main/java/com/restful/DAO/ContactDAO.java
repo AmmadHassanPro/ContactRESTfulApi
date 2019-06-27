@@ -100,6 +100,11 @@ public class ContactDAO {
 		
 		
 	}
+
+
+	public List<Contact> findAllByName(String name) {
+		return persistence.findAllByName(name);
+	}
 	
 	
 

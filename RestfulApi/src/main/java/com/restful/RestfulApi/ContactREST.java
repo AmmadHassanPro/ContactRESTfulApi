@@ -66,18 +66,17 @@ public class ContactREST {
 	}
 	
 	@RequestMapping(value = "/findByName" , method = RequestMethod.POST, produces= "application/json")
-	public @ResponseBody GenericContactResponse findByName(@RequestBody FindBynameMethodRequest request) {
+	public @ResponseBody ContactsListResponse findByName(@RequestBody FindBynameMethodRequest request) {
 		//Fetching Contact By Name
-		contactRec = conDAO.findByName(request.getName());
+		List<Contact> contactRec = conDAO.findAllByName(request.getName());
 		
 		// Creating Response by checking conditions
 		if (contactRec == null) {
-			GenericContactResponse response = new GenericContactResponse(null,"Not Found");
-			return response;		
+			return new ContactsListResponse(null,"Not Found");	
 		}		
 		else {
-			GenericContactResponse response = new GenericContactResponse(contactRec,"Record Found");
-			return response;
+			return new ContactsListResponse(contactRec,"Record Found");
+			
 		}
 
 	}
@@ -89,8 +88,7 @@ public class ContactREST {
 		
 		contactRec= conDAO.findByEmail(request.getEmail());
 		if (contactRec == null) {
-			GenericContactResponse response = new GenericContactResponse(null,"Not Found");
-			return response;		
+			return new GenericContactResponse((Contact)null,"Not Found");			
 		}		
 		else {
 			GenericContactResponse response = new GenericContactResponse(contactRec,"Record Found");
